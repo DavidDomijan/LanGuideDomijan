@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LanGuideDomijan.HomePage"
+             BackgroundColor="#1a8f83">
+    <ContentPage.Content>
+        <StackLayout Padding="40" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+            <Image Source="graduationcap.png"></Image>
+
+            <Label 
+                   Text="LanGuide"
+                   TextColor="LightBlue"
+                   FontSize="45"
+                   HorizontalOptions="Center"
+                   FontAttributes="Bold"
+                   Margin="0,0,0,10"/>
+
+            <Label 
+                   Text="LANGUAGE TOOL"
+                   TextColor="white"
+                   FontSize="15"
+                   HorizontalTextAlignment="Center"
+                   Margin="0,0,0,0"/>
+            
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"></ColumnDefinition>
+                    <ColumnDefinition Width="*" ></ColumnDefinition>
+                    <ColumnDefinition Width="2*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <ImageButton Grid.Column="0" Source="users" BackgroundColor="#1a8f83" Clicked="usersButton_Clicked"/>
+                <ImageButton Grid.Column="1" Source="results" BackgroundColor="#1a8f83" Clicked="resultsButton_Clicked"/>
+                <ImageButton Grid.Column="2" Source="languages" BackgroundColor="#1a8f83" Clicked="languagesButton_Clicked"/>
+            </Grid>
+
+            <Grid Margin="0,-100,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*" ></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Label Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center" FontSize="15">Users</Label>
+                <Label Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center" FontSize="15">Results</Label>
+                <Label Grid.Column="2" VerticalOptions="Center" HorizontalOptions="Center" FontSize="15">Languages</Label>
+                
+            </Grid>
+            <Button x:Name="logoutButton"
+                    Margin="0,100,0,0"
+                    Text="Sign out"
+                    Clicked="signoutButton_Clicked"
+                    BackgroundColor="#1a8f83"
+                    TextColor="white"
+                    FontSize="10"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

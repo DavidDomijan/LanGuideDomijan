@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LanGuideDomijan.MainPage"
+             BackgroundColor="#1a8f83">
+
+    <ContentPage.Content>
+        <StackLayout Padding="40" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+
+            <Image Source="graduationcap.png"></Image>
+
+            <Label 
+                   Text="LanGuide"
+                   TextColor="LightBlue"
+                   FontSize="45"
+                   HorizontalOptions="Center"
+                   FontAttributes="Bold"
+                   Margin="0,0,0,10"/>
+
+             <Label 
+                   Text="LANGUAGE TOOL"
+                   TextColor="white"
+                   FontSize="15"
+                   HorizontalTextAlignment="Center"
+                   Margin="0,0,0,100"/>
+            
+
+            <Entry x:Name="emailE"
+                   Placeholder="Email Address"
+                   Keyboard="Email"
+                   TextColor="White"
+                   PlaceholderColor="LightGray"
+                   />
+
+            <Entry x:Name="passwordE"
+                   Placeholder="Password"
+                   IsPassword="True"
+                   TextColor="White"
+                   PlaceholderColor="LightGray"
+                   />
+
+            <Button x:Name="loginButton"
+                    Margin="50, 50"
+                    Text="Log in"
+                    Clicked="loginButton_Clicked"
+                    BackgroundColor="DarkGoldenrod"
+                    TextColor="white"/>
+            
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>
